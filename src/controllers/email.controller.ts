@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { EmailService } from "../Services/email.services";
+import { EmailService } from "../Services/email.service";
 import { AppError } from "../util/CusotmeError";
 export class EmailController {
   static async sendEmail(req: Request, res: Response, next: NextFunction) {

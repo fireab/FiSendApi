@@ -1,5 +1,6 @@
 import { Router } from "express";
 let router: Router = Router();
 import { SMSController } from "../controllers/sms.controller";
-router.post("/sendSms", SMSController.sendSMS);
+import { extractApiKey } from "../middlewares/apikey";
+router.post("/sendSms", extractApiKey, SMSController.sendSMS);
 export default router;

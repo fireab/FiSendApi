@@ -14,7 +14,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
-    "typeRoots": ["./src/@types","./prisma", "./node_modules/@types"],
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "paths": {
       "*": ["node_modules/*"]
     }

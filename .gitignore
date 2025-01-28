@@ -1,3 +1,11 @@
-node_modules
+# Ignore node_modules directory
+node_modules/
+
 # Keep environment variables out of version control
 .env
+
+# Ignore specific files in the prisma directory
+prisma/database.sqlite
+
+# Ignore migrations folder in prisma
+prisma/migrations/

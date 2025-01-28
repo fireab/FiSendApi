@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  communication-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}" 
+    networks:
+      - communication-service-network
+    volumes:
+      - communication-service:/app/uploads
+    restart: always
+networks:
+  communication-service-network:
+    driver: bridge
+volumes:
+  communication-service: {}
+
+
+
+  

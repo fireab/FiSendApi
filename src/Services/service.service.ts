@@ -16,8 +16,6 @@ export class ServiceService {
           throw new AppError(400, ["password, username required"]);
         } else {
           let encriptedData = encryptData(JSON.stringify(credential));
-          console.log("ecrypted data", encriptedData);
-
           return await prisma.services.create({
             data: {
               service_name: serviceName,
